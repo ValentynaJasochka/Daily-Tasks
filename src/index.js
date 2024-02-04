@@ -4,6 +4,8 @@ import { App } from 'components/App';
 import './index.css';
 import { Layout } from 'components/Layout/Layout';
 import { ThemeProvider } from 'styled-components';
+import { BrowserRouter } from 'react-router-dom';
+import { GlobalStyles } from 'components/GlobalStyles';
 
 const theme = {
   colors: {
@@ -15,13 +17,14 @@ const theme = {
   },
 };
 
-
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-    <Layout>
-      <App/>
-    </Layout>
-    </ThemeProvider>   
+      <BrowserRouter basename="/Daily-Tasks">
+      
+          <App />
+      <GlobalStyles/>
+      </BrowserRouter>
+    </ThemeProvider>
   </React.StrictMode>
 );
