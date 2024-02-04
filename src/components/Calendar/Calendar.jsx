@@ -2,9 +2,9 @@ import moment from 'moment';
 import { CalendarTable, DayWrapper } from './Calendar.styled';
 moment.updateLocale('en', { week: { dow: 1 } });
 const startDay = moment().startOf('months').startOf('week');
-const endDay = moment().endOf('months').endOf('week');
+// const endDay = moment().endOf('months').endOf('week');
 
-const calendar = [];
+// const calendar = [];
 
 // while (!day.isAfter(endDay)) {
 //   calendar.push(day.clone().format("MMM Do YY"));

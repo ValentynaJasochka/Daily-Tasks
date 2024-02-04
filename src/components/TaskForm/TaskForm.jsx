@@ -43,10 +43,10 @@ export const TaskForm = () => {
               <input
                 type="range"
                 name="periodic"
-                value="40"
+                // value="40"
                 min="0"
                 max="100"
-                step="20"
+                step="25"
               />
             </label>
             <p>

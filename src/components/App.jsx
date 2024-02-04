@@ -1,4 +1,4 @@
-import { Heder } from 'components/Heder/Heder';
+// import { Heder } from 'components/Heder/Heder';
 import { TaskForm } from 'components/TaskForm/TaskForm';
 import { TaskList } from 'components/TaskList/TaskList';
 import { Calendar } from './Calendar/Calendar';
