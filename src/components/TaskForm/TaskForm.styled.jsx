@@ -19,3 +19,12 @@ export const RadioBtnContainer = styled.div`
   display: flex;
   gap: 30px;
 `
+export const RangeInput = styled.input`
+  width: 400px;
+  
+  `
+export const TaskDescription = styled.textarea`
+  resize: none;
+  width: 200px;
+  height: 100px;
+`

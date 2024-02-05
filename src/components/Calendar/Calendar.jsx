@@ -10,7 +10,7 @@ const startDay = moment().startOf('months').startOf('week');
 //   calendar.push(day.clone().format("MMM Do YY"));
 //   day.add(1, 'day')
 // }
-console.log(startDay);
+
 const day = startDay.clone().subtract(1, 'day');
 const daysArray = [...Array(42)].map(() => day.add(1, 'day').clone());
 
