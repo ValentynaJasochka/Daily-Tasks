@@ -13,23 +13,27 @@ import { useState } from 'react';
 import { URL } from 'constants';
 
 const handleRangePeriodic = value => {
+  let str;
   switch (value) {
     case 0:
-      return 'monthly';
+      str ='monthly';
       break;
     case 25:
-      return 'weekly';
+      str ='weekly';
       break;
     case 50:
-      return 'two times per week';
+      str = 'two times per week';
       break;
     case 75:
-      return 'three times per week';
+      str ='three times per week';
       break;
     case 100:
-      return 'everyday';
+      str ='everyday';
       break;
+      default:
+        str ='deadline';
   }
+  return str;
 };
 axios.defaults.baseURL = URL;
 const putTask = async data => {
