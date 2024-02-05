@@ -28,3 +28,19 @@ export const TaskDescription = styled.textarea`
   width: 200px;
   height: 100px;
 `
+export const RadioBtn= styled.label`
+  &::before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+  }
+  /* &>RadioInput:checked{
+  background-color: blue;} */
+`
+export const RadioInput = styled.input`
+:checked.label &{
+  background-color: #ff00b7;
+}
+`

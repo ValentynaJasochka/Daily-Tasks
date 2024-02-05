@@ -1,7 +1,7 @@
 import { Task } from "./TaskItem.styled";
 
 export const TaskItem=({props}) =>{
-  const {  taskName, taskDescription, periodic, deadline, completed, category } = props;
+  const {  taskName, taskDescription, periodic, deadline, category } = props;
 
  
   return(<Task>

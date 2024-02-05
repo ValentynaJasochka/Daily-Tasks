@@ -2,7 +2,9 @@ import {
   BTN,
   Form,
   Input,
+  RadioBtn,
   RadioBtnContainer,
+  RadioInput,
   RangeInput,
   TaskDescription,
 } from './TaskForm.styled';
@@ -87,36 +89,36 @@ export const TaskForm = () => {
           <div>
             <p> Category</p>
             <RadioBtnContainer>
-              <label>
+              <RadioBtn>
                 education
-                <Input
+                <RadioInput
                   type="radio"
                   name="category"
                   value="education"
                   onChange={handleCategory}
                   checked={category === 'education'}
                 />
-              </label>
-              <label>
+              </RadioBtn>
+              <RadioBtn>
                 physical activity
-                <Input
+                <RadioInput
                   type="radio"
                   name="category"
                   value="physical activity"
                   onChange={handleCategory}
                   checked={category === 'physical activity'}
                 />
-              </label>
-              <label>
+              </RadioBtn>
+              <RadioBtn>
                 fun
-                <Input
+                <RadioInput
                   type="radio"
                   name="category"
                   value="fun"
                   onChange={handleCategory}
                   checked={category === 'fun'}
                 />
-              </label>
+              </RadioBtn>
             </RadioBtnContainer>
           </div>
 
