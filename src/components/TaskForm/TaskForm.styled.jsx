@@ -10,8 +10,9 @@ export const Input = styled.input`
   border-radius: 15px;
 `
 export const BTN = styled.button`
- display: inline;
- padding: 40px;
+
+ align-self: center;
+ padding: 20px 90px;
   border-radius: 15px;
   background-color: grey;
 `
@@ -29,6 +30,9 @@ export const TaskDescription = styled.textarea`
   height: 100px;
 `
 export const RadioBtn= styled.label`
+display: flex;
+gap: 15px;
+align-items: center;
   &::before{
     content: '';
     display: block;
@@ -40,7 +44,21 @@ export const RadioBtn= styled.label`
   background-color: blue;} */
 `
 export const RadioInput = styled.input`
-:checked.label &{
-  background-color: #ff00b7;
+/* visibility: hidden; */
+position: absolute;
+width: 1px;
+height: 1px;
+margin:-1px;
+padding: 0;
+overflow: hidden;
+border: 0;
+clip: rect(0 0 0 0 );
+&:checked +label::before {
+  background-color: gray;
+  box-shadow: inset 0 0 0 4px white;
+}
+&:hover +label::before {
+ 
+ outline: 2px solid #272a80;
 }
 `
