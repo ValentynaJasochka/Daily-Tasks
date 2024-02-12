@@ -6,3 +6,9 @@ export const Tasks = styled.ul`
   gap: 30px;
  
 `;
+export const FilterWrapper =styled.div`
+    display: flex;
+  flex-wrap: wrap;
+  gap: 70px;
+  margin-bottom: 40px;
+`

@@ -2,7 +2,10 @@ import { useEffect, useState } from "react"
 import { URL } from "constants"
 import axios from 'axios';
 import { TaskItem } from "components/TaskItem/TaskItem";
-import { Tasks } from "./TaskList.styled";
+import { FilterWrapper, Tasks } from "./TaskList.styled";
+import { TaskCounter } from "components/TaskCounter/TaskCounter";
+import { StatusFilter } from "components/StatusFilter/StatusFilter";
+import { CategoryFilter } from "components/CategoryFilter/CategoryFilter";
 axios.defaults.baseURL = URL;
 const getTasks = async () => {
   try {
@@ -25,7 +28,12 @@ export const TaskList=() =>{
   },[]   
   )
   return(<>
-  <Tasks>
+   <FilterWrapper>
+   <TaskCounter/>
+    <StatusFilter/>
+    <CategoryFilter/>
+    </FilterWrapper>
+  <Tasks>     
 {tasks.map(task =><TaskItem key={task.id} props={task}/>)}
   </Tasks>
   </>)
